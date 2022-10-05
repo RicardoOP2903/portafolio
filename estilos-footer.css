@@ -61,10 +61,6 @@ footer{
     footer li:nth-child(1) a:before {
         background: #211f1f;
     }
-  /* linkedin */
-  /* footer li:nth-child(2) a:before {
-    background: #0077b5;
-  } */
     /* facebook */
     footer li:nth-child(2) a:before{
         background: #3b5999;
