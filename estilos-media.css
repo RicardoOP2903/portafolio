@@ -69,11 +69,6 @@
         font-size: 85px;
     }
 }
-@media (max-width:500px){
-    h1.flex-dato-menu{
-        font-size: 50px;
-    }
-}
 @media (max-width: 550px){
     .flex-main{
         display: flex;
@@ -83,7 +78,7 @@
         flex-direction: column;
     }
     h1.flex-dato-menu{
-        font-size: 65px;
+        font-size: 55px;
     }
     footer li a {
         width: 30px;

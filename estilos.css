@@ -119,6 +119,9 @@ h1.flex-dato-menu{
     background-position-y:center;
     background-clip: text;
     -webkit-background-clip: text;
+    align-items: center;
+    align-content: center;
+    align-self: center;
 }
 .flex-dato-m{
     display: flex;
