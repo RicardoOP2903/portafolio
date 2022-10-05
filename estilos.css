@@ -1,0 +1,383 @@
+*{
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center;
+}
+body{
+    background: linear-gradient(45deg,#030d1f,#072f3d,#568179);
+    background-size: 400% 400%;
+    /* position: relative; */
+    animation: cambiar 10s ease-in-out infinite;
+}
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+
+.flex-main{
+    flex:1 1 0%;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    /* z-index: 3; */
+}
+
+
+.flex-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding-top: 100px;  
+    padding-bottom: 50px;
+    background-image: url('images/atardecer.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.flex-bio{
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    background-image: url('images/sky.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+.flex-titulo{
+    font-family: 'Nixie One', cursive;
+    font-size: 69px;
+}
+.flex-texto{
+    display: flex;
+    max-width: 90%;
+    font-family: 'Marcellus', serif;
+}
+
+.flex-trabajos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    background-image: url('images/spider.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.flex-contacto{
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    background-image: url('images/cloud.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.flex-img-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 300px;
+    max-width: 90%;
+    justify-content: space-around;
+    align-items:center;
+    align-content: center;
+}
+.flex-img{
+    display: flex;
+    flex-direction: row;
+}
+.flex-img-girar{
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+}
+h1.flex-dato-menu{
+    margin: 5px;
+    color:transparent;
+    text-transform: uppercase;
+    font-size: 110px;
+    font-family: 'Audiowide', cursive;
+    font-weight: bold;
+    background-image: url('images/circuitos2.jpg');
+    background-size:contain;
+    background-position-y:center;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.flex-dato-m{
+    display: flex;
+    max-width: 90%;
+    font-family: 'Marcellus', serif;
+    font-size:30px;
+    color: black;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+img{
+    object-fit: cover;
+}
+.img-peq{
+    display: flex;
+    max-width: 3vw;
+    min-width: 45px;
+    /* z-index: -1; */
+}
+.img-med{
+    display: flex;
+    max-height: 5vh;
+    min-height: 50px;
+    padding: 2px;
+}
+.img-gra{
+    display: flex;
+    max-width: 35vw;
+    min-width: 250px;
+    padding: 5px;
+}
+
+#flex-menu .rotar{
+    transform: rotateY(720deg);
+}
+
+.flex-img{
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-img figure{
+   position:relative;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+}
+.flex-img figure img{
+    width: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+.flex-img figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #35332fb7;
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+   text-align: center;
+}
+.flex-img figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+.flex-img figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.flex-img figure:hover > img{
+    transform: scale(1.3);
+}
+.flex-img figure .capa h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+     margin-top: 30px;
+}
+.flex-img figure .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+
+body::-webkit-scrollbar {
+	width: 7px;
+}
+body::-webkit-scrollbar-track{
+    border: 4px solid transparent;
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+	background: black;
+    border-radius: 0px;
+}
+body::-webkit-scrollbar-thumb:hover {
+    border-radius: 3px;
+
+}
+
+.card {
+    position: relative;
+    display: flex;
+    max-width: 400px;
+}
+.card div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.card .front {
+    background: #c3b692;
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.card .back {
+    background: #682fc4;
+    transform: perspective(500px) rotateY(180deg);
+}
+
+
+.card:hover .front {
+   
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .back {
+   
+    transform: perspective(500px) rotateY(360deg);
+}
+
+.card div h1 {
+    font-size: 30px;
+    color: #f1f1f1;
+}
+
+
+
+.flex-contacto .form{
+    width: 100%;
+    margin: auto;
+}
+
+.flex-contacto form .grupo{
+    position: relative;
+    margin: 45px;
+    background-color: #5196ce56;
+}
+
+.flex-contacto input, textarea{
+    background: none;
+    color:#c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+}
+
+.flex-contacto input:focus,textarea:focus{
+    outline: none;
+    color: rgb(94,93,93);
+}
+
+.flex-contacto input:focus~label, 
+.flex-contacto input:valid~label, 
+.flex-contacto textarea:focus~label, .flex-contacto textarea:valid~label{
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: white;
+}
+
+.flex-contacto label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top:10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+
+input:focus~.barra::before, textarea:focus~.barra::before{
+    width: 100%;
+}
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra::before{
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #0E2859, #AFCEE3);
+    transition: 0.3s ease all;
+    left: 0%;
+}
+button{
+    background: #FC5C7D;
+    background: -webkit-linear-gradient(to right, #0E2859, #AFCEE3);
+    background: linear-gradient(to right, #0E2859, #AFCEE3);
+    display: block;
+    width: 100px;
+    height: 40px;
+    border:none;
+    color:#fff; 
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1100px){
+    form{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:600px){
+    form{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:450px){
+    form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:300px){
+    form{
+        width: 90%;
+    }
+}
