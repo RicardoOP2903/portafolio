@@ -62,18 +62,18 @@ footer{
         background: #211f1f;
     }
   /* linkedin */
-  footer li:nth-child(2) a:before {
+  /* footer li:nth-child(2) a:before {
     background: #0077b5;
-  }
+  } */
     /* facebook */
-    footer li:nth-child(3) a:before{
+    footer li:nth-child(2) a:before{
         background: #3b5999;
       }
       /* whatsapp */
-      footer li:nth-child(4) a:before{
+      footer li:nth-child(3) a:before{
         background: #25d366;
       }
   /* google+ */
-  footer li:nth-child(5) a:before {
+  footer li:nth-child(4) a:before {
     background: #dd4b39;
   }
